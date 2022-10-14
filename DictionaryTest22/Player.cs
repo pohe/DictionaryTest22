@@ -11,7 +11,7 @@ namespace DictionaryTest22
     public enum PlayerType {Warrior, Wizard, Hunter}
     public class Player
     {
-				private int _no;
+		private int _no;
 
 		public int No
 		{
