@@ -93,3 +93,30 @@ foreach (var item in playerDictionaryByName.Keys)
 {
     Console.WriteLine(item);
 }
+
+Console.WriteLine(  "DictionaryStudent");
+
+Dictionary<int, Student> dictionaryStudent = new Dictionary<int, Student>();
+Student s1;
+s1 = new Student("Poul", true);
+Student s2 = new Student("Carina", true);
+Student s3 = new Student("Anders", false);
+
+dictionaryStudent.Add(s1.Id, s1);
+dictionaryStudent.Add(s2.Id, s2);
+dictionaryStudent.Add(s3.Id, s3);
+
+dictionaryStudent.Remove(s2.Id);
+
+foreach (Student s in dictionaryStudent.Values)
+{
+    Console.WriteLine(s.ToString());
+}
+
+
+//Don't do it
+//for (int i = 1; i <= dictionaryStudent.Count; i++)
+//{
+//    if (dictionaryStudent.ContainsKey(i))
+//        Console.WriteLine(dictionaryStudent[i] );
+//}
